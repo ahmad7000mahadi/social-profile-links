@@ -25,7 +25,7 @@ Users should be able to:
 ### Screenshot
 
 <!-- Add a screenshot of your solution here -->
-![alt text](image.png)
+![screenshot](screenshot.png)
 
 ### Links
 
