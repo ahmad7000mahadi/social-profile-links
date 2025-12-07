@@ -13,30 +13,47 @@
     />
   </head>
   <body>
+    <!-- Accessibility: Hidden H1 for document outline -->
+    <h1 class="sr-only">Social Links Profile Card</h1>
+
     <article class="card">
-      <aside class="card-author-info">
+      
+      <!-- Semantic grouping for Header Info (Image + Name + Loc) -->
+      <header class="card-header">
         <img
           src="avatar-jessica.jpeg"
-          alt="Author profile picture"
+          alt="Jessica Randall"
           class="card-avatar-image"
         />
-        <!-- Author name -->
-        <h1 class="card-author-name">Jessica Randall</h1>
-        <!-- Author location -->
+        <!-- Hierarchy: H2 because H1 is the page title -->
+        <h2 class="card-author-name">Jessica Randall</h2>
         <p class="card-author-location">London, United Kingdom</p>
-        <!-- Author bio -->
-        <p class="card-author-bio">"Front-end developer and avid reader."</p>
-      </aside>
-      <!-- Author social links -->
-      <aside class="card-social-links">
-        <ul>
-          <li class="social-links"><a href="#">GitHub</a></li>
-          <li class="social-links"><a href="#">Frontend Mentor</a></li>
-          <li class="social-links"><a href="#">LinkedIn</a></li>
-          <li class="social-links"><a href="#">Twitter</a></li>
-          <li class="social-links"><a href="#">Instagram</a></li>
+      </header>
+
+      <!-- Main Bio -->
+      <p class="card-author-bio">"Front-end developer and avid reader."</p>
+
+      <!-- Navigation Section -->
+      <nav class="card-social-links">
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link" aria-label="Jessica Randall's GitHub">GitHub</a>
+          </li>
+          <li>
+            <a href="#" class="social-link" aria-label="Jessica Randall's Frontend Mentor">Frontend Mentor</a>
+          </li>
+          <li>
+            <a href="#" class="social-link" aria-label="Jessica Randall's LinkedIn">LinkedIn</a>
+          </li>
+          <li>
+            <a href="#" class="social-link" aria-label="Jessica Randall's Twitter">Twitter</a>
+          </li>
+          <li>
+            <a href="#" class="social-link" aria-label="Jessica Randall's Instagram">Instagram</a>
+          </li>
         </ul>
-      </aside>
+      </nav>
+      
     </article>
   </body>
 </html>
